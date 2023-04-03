@@ -96,10 +96,6 @@ th {
     padding: 0.5rem;
 }
 
-tr:nth-child(-n+5) {
-    background: var(--blue-color);
-}
-
 table, th, td
 {
     border-collapse: collapse;

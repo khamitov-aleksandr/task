@@ -1,24 +1,28 @@
-let x = document.getElementById("users");
-let y = document.querySelectorAll("td");
+let addRow = (coinsTable, coin, color) => {
+    let tableBody = coinsTable.getElementsByTagName('tbody')[0];
+    let  newRow = tableBody.insertRow()
+    newRow.style.backgroundColor = color;
+    let newCell1 = newRow.insertCell();
+    newCell1.appendChild(document.createTextNode(coin.id));
+    let newCell2 = newRow.insertCell();
+    newCell2.appendChild(document.createTextNode(coin.symbol));
+    let newCell3 = newRow.insertCell();
+    newCell3.appendChild(document.createTextNode(coin.name));
+}
+
+
 fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1")
-    // Converting received data to JSON
     .then((response) => response.json())
-    .then((json) => {
-        // 2. Create a variable to store HTML table headers
-        let li = `<thead><tr><th>ID</th><th>Symbol</th><th>Name</th></tr></thead>`;
-        // 3. Loop through each data and add a table row
-        json.forEach((user) => {
-            li += `<tr>
-                <td>${user.id}</td>
-                <td>${user.symbol} </td>
-                <td>${user.name}</td>
-            </tr>`;
+    .then((results) => {
+        let coinsTable = document.getElementById("coins");
+        results.forEach((coin, i) => {
+            let color =  coin.symbol == "usdt" ? "green" : i < 5 ? "blue" : "white"
+            addRow(coinsTable, coin, color);
         });
-        // 4. DOM Display result
-        x.innerHTML = li;
-        let n = 10;
-        x.rows[0].style.background = "transparent";
-        x.rows[3].cells[1].style.backgroundColor = "green";
+    })
+    .catch((error) => {
+        console.log("Error:", error)
+        alert("Unable to fetch data from the server.")
     });
 
 (function (document) {
@@ -60,4 +64,3 @@ fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
     });
 
 })(document);
-

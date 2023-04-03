@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,26 @@
     <link rel="stylesheet" href="styles.css">
     <title>Fetch API</title>
 </head>
+
 <body>
-    <h2>Fetch API </h2>
+    <h2>Currencies</h2>
     <h3>Fetching data from JSON Array and Array Objects into Html Table</h3>
     <hr>
     <input type="search" class="light-table-filter" data-table="order-table" placeholder="Search & Filter">
     <div>
         <br>
         <hr>
-        <!-- Table to display fetched user data -->
-        <table class="order-table table" id="users"></table>
+        <!-- Table to display fetched coin data -->
+        <table class="order-table table" id="coins">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </div>
     <hr>
     <!-- Link JavaScript file -->
