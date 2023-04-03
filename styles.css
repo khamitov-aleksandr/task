@@ -1,0 +1,110 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Fetch API
+    Author: Aleksandr Khamitov
+    Version: 1.0
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01.Common css
+    02.Table css
+
+-----------------------------------------------------------------------------------*/
+/*===========================
+     01.Common CSS
+===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Markazi+Text&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Font */
+    --ff-inter: "Inter", sans-serif;
+    /* Colors */
+    --blue-color: rgb(135, 135, 248);
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: var(--ff-inter);
+    font-size: large;
+    background: rgb(249,167,167);
+background: linear-gradient(90deg, rgba(249,167,167,1) 10%, rgba(244,250,138,1) 60%, rgba(0,180,217,1) 90%);
+}
+
+input {
+    font-family: var(--ff-inter);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 15px 20px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    margin-top: 2rem;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+h3 {
+    margin: 1rem;
+}
+
+hr {
+    margin: 1rem;
+    border-top: 2px solid lightblue;
+    border-bottom: 1px solid blue;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: -15px;
+}
+/*===========================
+     02.Table CSS
+===========================*/
+table, tbody, tr, th, td {
+    vertical-align: baseline;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+td,
+th {
+    border: 2px solid #999;
+    padding: 0.5rem;
+}
+
+tr:nth-child(-n+5) {
+    background: var(--blue-color);
+}
+
+table, th, td
+{
+    border-collapse: collapse;
+}
+
+table > tr {
+    vertical-align: middle;
+}

@@ -1,0 +1,347 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Bootstrap
+    Author: Aleksandr Khamitov
+    Version: 1.0
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01.Common css
+    02.Header css
+    03.Container css
+    04.Cards css
+    05.Pagination css
+    06.Footer css
+
+-----------------------------------------------------------------------------------*/
+/*===========================
+     01.Common CSS
+===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Markazi+Text&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+:root {
+    /* Font */
+
+    /* Colors */
+
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+body {
+    max-height: 6685px;
+    max-width: 768px;
+    border-radius: 0px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+ul, ul > li {
+    text-decoration: none;
+    list-style-type: none
+}
+/*===========================
+     02.Header css
+===========================*/
+header {
+    height: 59px;
+    align-content: center;
+}
+
+.logo {
+    height: 59px;
+    width: 128px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.input-search {
+    margin-top: 22px;
+    margin-left: 15px;
+    border-radius: 20px;
+    padding-right: 227px;
+    height: 38px;
+    width: 30px;
+}
+.btn-enter {
+    margin-top: 19px;
+    margin-left: 23px;
+    margin-left: 7px;
+    padding-left: 44px;
+    padding-right: 44px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.registration {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-registration {
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 40px
+}
+
+.header-registration {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/*===========================
+     03.Container css
+===========================*/
+
+.container {
+    margin-top: 67px;
+}
+
+.filter {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 153px;
+    height: 31px;
+    margin-left: -5px;
+    margin-top: 2px;
+    padding-left: 9px;
+    padding-top: 3px;
+}
+
+.input-search-again {
+    border-radius: 20px;
+}
+
+.default {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+/*===========================
+     04.Cards css
+===========================*/
+
+.container-content {
+    margin-top: 32px;
+}
+
+.row {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 20px;
+    width: 216px;
+    height: 436px;
+}
+
+.card-img-top {
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.btn-buy {
+    background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
+    border-radius: 15px;
+    width: 100%;
+    margin-top: -8px;
+}
+
+.text-buy {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.card-title {
+    text-align: left;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: -25px;
+    margin-bottom: 0px;
+}
+
+.card-check {
+    margin-top: 0px;
+}
+
+.d-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-name {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: -8px;
+}
+
+.card-text-name {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.card-text-check {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    color: #FF9900;
+    margin-left: -60px;
+    margin-bottom: 0px;
+    margin-top: -1px;
+}
+
+.card-text-specific {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+    margin-left: 0;
+}
+
+.card-text-unic {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    color: #000000;
+    margin-right: 0;
+    border-radius: 7px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #FFC107 0%, #EC851A 100%);
+}
+
+.card-text-price {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    margin-left: 0;
+    margin-top: -10px;
+}
+
+.card-text-number {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    color: #000000;
+    margin-right: 0;
+    margin-top: -10px;
+}
+
+/*===========================
+     05.Pagination css
+===========================*/
+
+.pagination {
+    margin-bottom: 38px;
+    margin-top: -7px;
+}
+
+a {
+    width: 11px;
+    height: 38px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 38px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    border: none;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin: 10px;
+}
+
+.page-link {
+    color: #000000;
+    border: none;
+}
+
+/*===========================
+     06.Footer css
+===========================*/
+
+footer {
+    height: 310px;
+    width: 768px;
+    border-radius: 0px;
+    background: #FDD446;
+}
+
+.social {
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 655px;
+}
+
+.star {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: 333px;
+}
+
+.text-start {
+    margin-left: 0;
+}
+
+.copyright {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 50px;
+    background: #FDD446;
+}
